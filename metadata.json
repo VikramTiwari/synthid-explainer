@@ -1,0 +1,5 @@
+{
+  "name": "SynthID Explainer",
+  "description": "Interactive visualization suite for explaining Google DeepMind's SynthID text watermarking technology.",
+  "requestFramePermissions": []
+}
