@@ -1,4 +1,4 @@
-import { LucideIcon, Brain, Split, Trophy, Scale, Search, AlertTriangle, Sparkles, BookOpen, Image, Radar } from 'lucide-react';
+import { LucideIcon, Brain, Split, Trophy, Scale, Search, AlertTriangle, Sparkles, BookOpen, Image, Radar, Eye } from 'lucide-react';
 
 export interface Slide {
   id: string;
@@ -9,6 +9,7 @@ export interface Slide {
 
 export const SLIDES: Slide[] = [
   { id: 'the-problem', title: 'The Problem', description: 'Why detection is failing', icon: AlertTriangle },
+  { id: 'steganography', title: 'Steganography 101', description: 'Hiding in plain sight', icon: Eye },
   { id: 'intro', title: 'Introducing SynthID', description: 'The Solution', icon: Sparkles },
   { id: 'llm-prob', title: 'LLM Probability', description: 'How LLMs predict the next token', icon: Brain },
   { id: 'red-green', title: 'Red vs. Green List', description: 'Traditional Watermarking (The Old Way)', icon: Split },

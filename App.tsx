@@ -10,6 +10,7 @@ import { SynthIDIntro } from './components/SynthIDIntro';
 import { References } from './components/References';
 import { ImageWatermark } from './components/ImageWatermark';
 import { SynthIDDetector } from './components/SynthIDDetector';
+import { SteganographyExplainer } from './components/SteganographyExplainer';
 import { ChevronRight } from 'lucide-react';
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
   const renderContent = () => {
     switch (currentSlideId) {
       case 'the-problem': return <TheProblem />;
+      case 'steganography': return <SteganographyExplainer />;
       case 'intro': return <SynthIDIntro />;
       case 'llm-prob': return <ProbChart />;
       case 'red-green': return <RedGreenList />;
@@ -41,7 +43,7 @@ const App: React.FC = () => {
         <div className="p-6 border-b border-slate-800">
           <div className="flex items-center space-x-2 mb-1">
              <div className="w-3 h-3 rounded-full bg-teal-400 animate-pulse"></div>
-             <h1 className="font-bold text-xl tracking-tight text-gray-100">SynthID<span className="text-teal-400">Ex</span></h1>
+             <h1 className="font-bold text-xl tracking-tight text-gray-100">SynthID <span className="text-teal-400">Explainer</span></h1>
           </div>
           <p className="text-xs text-gray-500 font-mono">ENGINEERING BREAKDOWN</p>
         </div>
